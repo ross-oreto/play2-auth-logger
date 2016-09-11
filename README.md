@@ -85,5 +85,5 @@ def writeToAccessLog(request: RequestHeader, result: Option[Result] = None, star
 
 
 ####Note: 
-    This will not log entries for assets and or webjars. 
-    If those are needed you could create a filter which logs those requests specifically looking for /assets or /webjars uri patterns.
+This will not log entries for assets and or webjars. 
+If those are needed you could create a filter which logs those requests specifically looking for /assets or /webjars uri patterns.
