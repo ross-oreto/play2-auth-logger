@@ -38,7 +38,7 @@ class HomeController extends Controller with AuthConfigImpl with AuthLogger {
 }
 ```
 
-If you are using the AuthenticationElement or OptionalAuthElement instead of AuthElement, the corresponding traits are available are available
+If you are using the AuthenticationElement or OptionalAuthElement instead of AuthElement, the corresponding traits are available
 ```
 with AuthenticationLogger
 with OptionalAuthLogger
