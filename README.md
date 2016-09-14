@@ -2,6 +2,13 @@
 
 This is a trait which adds access logging for actions and play2-auth stack actions.
 
+* Installation
+```
+resolvers += "Releases resolver" at "https://s3-us-west-2.amazonaws.com/org.oreto.maven/releases"
+resolvers += "Snapshots resolver" at "https://s3-us-west-2.amazonaws.com/org.oreto.maven/snapshots"
+"org.oreto" % "play2-auth-logger_2.11" % "1.0-SNAPSHOT"
+```
+
 * Usage for normal actions
 ```
 class Application extends Controller with LoggingController {
