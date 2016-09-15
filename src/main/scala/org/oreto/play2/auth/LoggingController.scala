@@ -42,7 +42,7 @@ trait LoggingController {
       val contentLength = request.headers.get("Content-Length").getOrElse("None")
 
       var line = s"$remoteAddress - ${request.host} - ${request.method}: $protocol ${request.uri}" +
-        s" body-size: $contentLength, ref: $referer, agent: ${userAgent.get}, time: $requestTime"
+        s" body-size: $contentLength, Referer: $referer, User-Agent: ${userAgent.get}, response-time: $requestTime"
 
       if (result.isDefined) {
         val resultSize = result.get.body.contentLength.getOrElse(0)
